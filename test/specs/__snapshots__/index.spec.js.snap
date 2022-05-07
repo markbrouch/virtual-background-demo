@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Index Page should render correctly 1`] = `
+<div>
+  <v-row-stub
+    tag="div"
+  >
+    <v-col-stub
+      tag="div"
+    >
+      <h1>
+        Source
+      </h1>
+       
+      <!---->
+    </v-col-stub>
+     
+    <v-col-stub
+      tag="div"
+    >
+      <h1>
+        Final
+      </h1>
+       
+      <!---->
+    </v-col-stub>
+  </v-row-stub>
+   
+  <v-row-stub
+    tag="div"
+  >
+    <v-col-stub
+      tag="div"
+    >
+      <v-btn-stub
+        activeclass=""
+        tag="button"
+        type="button"
+      >
+        
+        Show Composite Steps
+      
+      </v-btn-stub>
+    </v-col-stub>
+  </v-row-stub>
+   
+  <!---->
+</div>
+`;
