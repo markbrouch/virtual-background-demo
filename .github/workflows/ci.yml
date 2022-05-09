@@ -51,6 +51,9 @@ jobs:
       - name: Run tests 🧪
         run: yarn test
 
+      - name: Generate gh-pages site ⚡️
+        run: yarn generate
+
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
