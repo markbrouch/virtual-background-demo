@@ -51,7 +51,7 @@ jobs:
       - name: Run tests 🧪
         run: yarn test
 
-      - name: Generate gh-pages site ⚡️
+      - name: Generate gh-pages site ✨
         run: yarn generate
 
       - name: Deploy
