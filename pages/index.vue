@@ -62,6 +62,7 @@ export default {
   components: {
     VideoTrack,
   },
+  middleware: ['checkBrowserSupport'],
   setup() {
     const showCompositeSteps = ref(false)
 
