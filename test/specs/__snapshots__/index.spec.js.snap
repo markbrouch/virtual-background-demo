@@ -8,21 +8,21 @@ exports[`Index Page should render correctly 1`] = `
     <v-col-stub
       tag="div"
     >
+      <!---->
+       
       <h1>
         Source
       </h1>
-       
-      <!---->
     </v-col-stub>
      
     <v-col-stub
       tag="div"
     >
+      <!---->
+       
       <h1>
         Final
       </h1>
-       
-      <!---->
     </v-col-stub>
   </v-row-stub>
    
