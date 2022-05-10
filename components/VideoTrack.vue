@@ -1,5 +1,5 @@
 <template>
-  <div ref="videoContainer" class="video-container" />
+  <div ref="videoContainer" />
 </template>
 
 <script>
@@ -18,10 +18,3 @@ export default {
   },
 }
 </script>
-
-<style>
-.video-container {
-  height: 100%;
-  width: 100%;
-}
-</style>

@@ -2,15 +2,15 @@
   <div>
     <v-row>
       <v-col>
-        <h1>Source</h1>
         <VideoTrack v-if="rawVideoTrack" :track="rawVideoTrack" />
+        <h1>Source</h1>
       </v-col>
       <v-col>
-        <h1>Final</h1>
         <VideoTrack
           v-if="virtualBackgroundVideoTrack"
           :track="virtualBackgroundVideoTrack"
         />
+        <h1>Final</h1>
       </v-col>
     </v-row>
     <v-row>
@@ -22,28 +22,28 @@
     </v-row>
     <v-row v-if="showCompositeSteps">
       <v-col>
-        <h3>Mask</h3>
         <VideoTrack
           v-if="composite1VideoTrack"
           :track="composite1VideoTrack"
           class="transparent-background"
         />
+        <h3>Segmentation mask</h3>
       </v-col>
       <v-col>
-        <h3>Bilateral Filter</h3>
         <VideoTrack
           v-if="composite2VideoTrack"
           :track="composite2VideoTrack"
           class="transparent-background"
         />
+        <h3>Bilateral filter</h3>
       </v-col>
       <v-col>
-        <h3>Composite Foreground</h3>
         <VideoTrack
           v-if="composite3VideoTrack"
           :track="composite3VideoTrack"
           class="transparent-background"
         />
+        <h3>Foreground composite</h3>
       </v-col>
     </v-row>
   </div>
