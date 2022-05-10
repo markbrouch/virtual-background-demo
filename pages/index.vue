@@ -1,11 +1,11 @@
 <template>
   <div>
     <v-row>
-      <v-col>
+      <v-col cols="12" xs="12" sm="6">
         <VideoTrack v-if="rawVideoTrack" :track="rawVideoTrack" />
         <h1>Source</h1>
       </v-col>
-      <v-col>
+      <v-col cols="12" xs="12" sm="6">
         <VideoTrack
           v-if="virtualBackgroundVideoTrack"
           :track="virtualBackgroundVideoTrack"
@@ -21,7 +21,7 @@
       </v-col>
     </v-row>
     <v-row v-if="showCompositeSteps">
-      <v-col>
+      <v-col cols="12" xs="12" sm="4">
         <VideoTrack
           v-if="composite1VideoTrack"
           :track="composite1VideoTrack"
@@ -29,7 +29,7 @@
         />
         <h3>Segmentation mask</h3>
       </v-col>
-      <v-col>
+      <v-col cols="12" xs="12" sm="4">
         <VideoTrack
           v-if="composite2VideoTrack"
           :track="composite2VideoTrack"
@@ -37,7 +37,7 @@
         />
         <h3>Bilateral filter</h3>
       </v-col>
-      <v-col>
+      <v-col cols="12" xs="12" sm="4">
         <VideoTrack
           v-if="composite3VideoTrack"
           :track="composite3VideoTrack"
