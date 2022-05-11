@@ -1,7 +1,6 @@
 import '@tensorflow/tfjs-core'
 import '@tensorflow/tfjs-backend-webgl'
 import * as bodySegmentation from '@tensorflow-models/body-segmentation'
-import '@mediapipe/selfie_segmentation'
 import * as mpSelfieSegmentation from '@mediapipe/selfie_segmentation'
 import * as fx from 'glfx'
 
