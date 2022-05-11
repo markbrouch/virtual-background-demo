@@ -36,7 +36,7 @@ export default class VirtualBackgroundProcessor {
 
   async processFrame(inputFrameBuffer, outputFrameBuffer) {
     const [people] = await this.segmenter.segmentPeople(inputFrameBuffer)
-    const { mask } = await people.mask
+    const { mask } = people.mask
 
     const context = outputFrameBuffer.getContext('2d')
 
