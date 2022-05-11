@@ -1,5 +1,4 @@
 import * as bodySegmentation from '@tensorflow-models/body-segmentation'
-import * as mpSelfieSegmentation from '@mediapipe/selfie_segmentation'
 import * as fx from 'glfx'
 
 import VirtualBackgroundPath from '~/assets/virtual-background.mp4'
@@ -63,7 +62,7 @@ export function createSegmenter() {
     {
       runtime: 'mediapipe',
       modelType: 'landscape',
-      solutionPath: `https://cdn.jsdelivr.net/npm/@mediapipe/selfie_segmentation@${mpSelfieSegmentation.VERSION}`,
+      solutionPath: '/selfie_segmentation',
     }
   )
 }
