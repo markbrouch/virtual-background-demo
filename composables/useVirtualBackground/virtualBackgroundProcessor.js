@@ -23,7 +23,7 @@ export default class VirtualBackgroundProcessor {
   constructor(options) {
     this.segmenter = options.segmenter
     this.fxCanvas = fx.canvas()
-    this.fxTexture = null
+    this.fxTexture = this.fxCanvas.texture(new Image())
 
     this.virtualBackground = document.createElement('video')
     this.virtualBackground.autoplay = true
@@ -44,11 +44,7 @@ export default class VirtualBackgroundProcessor {
     context.drawImage(mask, 0, 0)
     if (this.compositeSteps < 2) return
 
-    if (!this.fxTexture) {
-      this.fxTexture = this.fxCanvas.texture(outputFrameBuffer)
-    } else {
-      this.fxTexture.loadContentsOf(outputFrameBuffer)
-    }
+    this.fxTexture.loadContentsOf(outputFrameBuffer)
     this.fxCanvas.draw(this.fxTexture).denoise(5).update()
     context.drawImage(this.fxCanvas, 0, 0)
     context.globalCompositeOperation = 'destination-in'
